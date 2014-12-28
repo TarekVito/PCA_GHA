@@ -111,7 +111,7 @@ namespace NN_Project
             return sum;
         }
 
-        public List<double> getMean(List<List<double>> Samples)
+        private List<double> getMean(List<List<double>> Samples)
         {
 
             double sum = 0.0;
