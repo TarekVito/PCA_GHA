@@ -110,27 +110,5 @@ namespace NN_Project
                 sum += output[j] * weightsTmp[j][ii];
             return sum;
         }
-
-        private List<double> getMean(List<List<double>> Samples)
-        {
-
-            double sum = 0.0;
-
-            List<double> Mean = new List<double>();
-
-            int x;
-            for (x = 0; x < Samples[x].Count; ++x)
-            {
-                for (int i = 0; i < Samples.Count; ++i)
-                {
-
-                    sum += Samples[i][x];
-                }
-                Mean.Add(sum / (double)Samples[x].Count);
-
-            }
-
-            return Mean;
-        }
     }
 }
